@@ -1,0 +1,19 @@
+<main class="container">
+  <h1 class="p-3 text-center">Cards</h1>
+  <div class="d-flex">
+    <div *ngFor="let card of cards" class="card m-3 w-75">
+      <div class="card-header text-center">
+        <b>Grupo de oferta: {{ card.id }}</b>
+        <br>
+        {{ card.total }} u/s
+      </div>
+      <ul class="list-group list-group-flush">
+        <li *ngFor="let product of card.products" class="list-group-item">
+          {{ product.title }}
+          <br>
+          <span class="text-danger fw-bold">{{ product.price | currency }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
