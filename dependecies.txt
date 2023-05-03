@@ -1,5 +1,0 @@
-Angular 13: Import css file to style.css file
-
-npm install bootstrap --save
-
-Buscar src/style.css y añadir @import "~bootstrap/dist/css/bootstrap.css";
